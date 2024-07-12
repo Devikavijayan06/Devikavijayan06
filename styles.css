@@ -1,11 +1,10 @@
 /* Base styles */
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
 }
-
-
 
 .wrapper {
     display: flex;
@@ -38,7 +37,8 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 20px;
-    flex-grow: 1; /* Allow ul to take up remaining space */
+    flex-grow: 1;
+    /* Allow ul to take up remaining space */
     align-items: center;
     justify-content: space-between;
 }
@@ -55,12 +55,13 @@ nav ul li a {
     display: block;
     color: #333;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: gray;
 }
 
 nav .logo {
-   
+
     padding: 10px 20px;
     border-radius: 5px;
     height: 80px;
@@ -85,10 +86,12 @@ nav .logo {
     border: none;
     padding: 10px 10px;
     border-radius: 20px;
-    margin-left: auto; /* Push the search bar and button to the right */
+    margin-left: auto;
+    /* Push the search bar and button to the right */
 }
-.search-join button:hover{
-    color:black;
+
+.search-join button:hover {
+    color: black;
     background-color: gray;
 }
 
@@ -97,11 +100,13 @@ nav .logo {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center; /* Center content */
+    text-align: center;
+    /* Center content */
 }
 
 .content img {
-    max-width: 100%; /* Ensure images don't overflow */
+    max-width: 100%;
+    /* Ensure images don't overflow */
     height: auto;
     margin: 1rem 0;
 }
@@ -109,8 +114,10 @@ nav .logo {
 .carousel {
     display: flex;
     align-items: center;
-    overflow-x: auto; /* Allow horizontal scrolling on small screens */
-    margin: 0 -1rem; /* Adjust margins for buttons */
+    overflow-x: auto;
+    /* Allow horizontal scrolling on small screens */
+    margin: 0 -1rem;
+    /* Adjust margins for buttons */
 }
 
 .carousel-item {
@@ -174,7 +181,8 @@ footer .social img {
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Stack nav items vertically */
+        flex-direction: column;
+        /* Stack nav items vertically */
         align-items: stretch;
         text-align: center;
     }
@@ -186,11 +194,13 @@ footer .social img {
     .carousel {
         overflow-x: auto;
         margin: 0;
-        scroll-snap-type: x mandatory; /* Enable snap scrolling */
+        scroll-snap-type: x mandatory;
+        /* Enable snap scrolling */
     }
 
     .carousel-item {
         margin: 0;
-        scroll-snap-align: start; /* Align items to the start of the container */
+        scroll-snap-align: start;
+        /* Align items to the start of the container */
     }
 }
