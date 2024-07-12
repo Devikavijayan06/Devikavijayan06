@@ -55,6 +55,9 @@ nav ul li a {
     display: block;
     color: #333;
 }
+nav ul li a:hover{
+    color: gray;
+}
 
 nav .logo {
    
@@ -83,6 +86,10 @@ nav .logo {
     padding: 10px 10px;
     border-radius: 20px;
     margin-left: auto; /* Push the search bar and button to the right */
+}
+.search-join button:hover{
+    color:black;
+    background-color: gray;
 }
 
 .content {
